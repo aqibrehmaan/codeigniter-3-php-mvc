@@ -20,12 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		//$this->load->view('welcome_message');
-		echo "this is the welcome controller";
+		$this->load->view('welcome_message');
 	}
 
 	public function test()
 	{
-		echo "this is the welcome controller";
+		echo "this is the test method for the view controllers";
 	}
 }
