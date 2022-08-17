@@ -7,12 +7,14 @@
     <title>User View</title>
 </head>
 <body>
-    <h1>
+    <h1><?php
+            echo $results;
+        ?>
         <?php 
-            foreach ($results as $object) 
-            {
-                echo $object->username . '<br>';
-            }
+            // foreach ($results as $object) 
+            // {
+            //     echo $object->username . '<br>';
+            // }
         ?>
     </h1>
 </body>
