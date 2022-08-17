@@ -3,9 +3,9 @@
 
 class Users extends CI_Controller {
 
-    public function show() {
+    public function show($user_id) {
 
-        $data['results'] = $this->user_model->get_users();
+        $data['results'] = $this->user_model->get_users($user_id);
 
         $this->load->view('user_view', $data);
         
