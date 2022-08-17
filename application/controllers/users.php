@@ -10,6 +10,19 @@ class Users extends CI_Controller {
         $this->load->view('user_view', $data);
         
     }
+
+    public function insert()
+    {   
+        $username = 'peter';
+        $password = 'secret';
+
+        $this->user_model->create_users(
+            [
+                'username' => $username,
+                'password' => $password
+            ]
+        );
+    }
 }
 
 ?>

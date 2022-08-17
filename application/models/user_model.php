@@ -8,12 +8,19 @@ class User_model extends CI_Model {
             'id' => $user_id,
             'username' => $username
         ]);
-
+       
         $query = $this->db->get('users');
 
         return $query->result();
                
     }
+
+    public function create_users($data)
+    {
+        $this->db->insert('users', $data);
+    }
+
+
 }
 
 ?>
